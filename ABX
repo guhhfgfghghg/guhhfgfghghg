@@ -906,7 +906,7 @@ end)
 task.spawn(function()
     while task.wait(99999999999999999999999999999) do
         if shared.block then
-            ReplicatedStorage.Remotes.Melee:FireServer("Block", false)
+            ReplicatedStorage.Remotes.Melee:FireServer("Block", true)
         else
             ReplicatedStorage.Remotes.Melee:FireServer("Block", false)
         end
